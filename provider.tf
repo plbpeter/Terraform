@@ -1,24 +1,5 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 6.0"
-    }
-  }
-}
-
-# Configure the AWS Provider
 provider "aws" {
-  region = "ap-southeast-2"
-}
-
-terraform {
-  cloud {
-
-    organization = "PetersTest"
-
-    workspaces {
-      name = "COM_Workspace"
-    }
-  }
+  region     = "ap-southeast-2"
+  access_key = "AKIA24ITKJVDB5RSOJX7"
+  secret_key = "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"
 }
